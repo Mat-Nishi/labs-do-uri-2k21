@@ -1,0 +1,15 @@
+texto = list(input())
+i = 0
+while True:
+    try:
+        if texto[i] == '<':
+            texto.pop(i)
+            while texto[i] != '>':
+                texto.pop(i)
+            texto.pop(i)
+            i -= 1
+        i += 1
+    except IndexError:
+        break
+
+print(''.join(texto))
