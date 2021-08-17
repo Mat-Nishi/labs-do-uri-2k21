@@ -91,7 +91,7 @@ def somatorio(i, f):
 
 def exp(x):
     soma = 0
-    for i in range(101):
+    for i in range(100):
         soma += (x**i)/fatorial(i)
 
     if soma == 1:
@@ -103,7 +103,7 @@ def exp(x):
 def ln(x):
     if x > 0:
         soma = 0
-        for i in range(101):
+        for i in range(100):
             soma += (1/((i*2)+1))*(((x-1)/(x+1))**(i*2))
 
         resultado = 2*((x-1)/(x+1))*soma
