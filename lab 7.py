@@ -33,7 +33,12 @@ def dobraLista(l):
 
 
 def removeDuplicadosLista(l):
-    return list(set(l))
+    # return list(set(l))
+    s = []
+    for i in l:
+        if i not in s:
+            s.append(i)
+    return s
 
 
 def trocaLista(l):
